@@ -1,0 +1,18 @@
+﻿生成启动时间为 2018/4/30 20:00:18。
+     1>项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\Detection\Detection.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\test\facedetection_test.cpp"
+         facedetection_test.cpp
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\test\facedetection_test.cpp(68): warning C4244: “初始化”: 从“int64”转换到“long”，可能丢失数据
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\test\facedetection_test.cpp(70): warning C4244: “初始化”: 从“int64”转换到“long”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\Detection.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\opencv\build\x64\vc12\lib opencv_core249.lib opencv_highgui249.lib opencv_imgproc249.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\Detection.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\Detection.lib" /MACHINE:X64 x64\Release\facedetection_test.obj
+         "C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.lib"
+         正在生成代码
+         已完成代码的生成
+         Detection.vcxproj -> C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\Detection.exe
+     1>已完成生成项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\Detection\Detection.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.20

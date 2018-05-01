@@ -1,0 +1,16 @@
+﻿生成启动时间为 2018/4/30 19:38:57。
+     1>项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\Detection\Detection.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\test\facedetection_test.cpp"
+         facedetection_test.cpp
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\test\facedetection_test.cpp(74): warning C4244: “初始化”: 从“int64”转换到“long”，可能丢失数据
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\test\facedetection_test.cpp(76): warning C4244: “初始化”: 从“int64”转换到“long”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\Release\Detection.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\opencv\build\x64\vc12\lib opencv_core249.lib opencv_highgui249.lib opencv_imgproc249.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\Release\Detection.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\Release\Detection.lib" /MACHINE:X86 /SAFESEH Release\facedetection_test.obj
+         "C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.lib"
+     1>opencv_core249.lib(opencv_core249.dll) : fatal error LNK1112: 模块计算机类型“x64”与目标计算机类型“X86”冲突
+     1>已完成生成项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\Detection\Detection.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.94

@@ -1,0 +1,52 @@
+﻿生成启动时间为 2018/4/30 20:40:04。
+     1>项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\FaceDetection\FaceDetection.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D FACEDETECTION_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\classifier\lab_boosted_classifier.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\classifier\mlp.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\classifier\surf_mlp.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\feat\lab_feature_map.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\feat\surf_feature_map.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\fust.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\io\lab_boost_model_reader.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\io\surf_mlp_model_reader.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\util\image_pyramid.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\util\nms.cpp"
+         lab_boosted_classifier.cpp
+         mlp.cpp
+         surf_mlp.cpp
+         face_detection.cpp
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(73): warning C4273: “seeta::FaceDetection::FaceDetection”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(44) : 参见“{ctor}”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(77): warning C4273: “seeta::FaceDetection::~FaceDetection”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(45) : 参见“{dtor}”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(83): warning C4273: “seeta::FaceDetection::Detect”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(54) : 参见“Detect”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(111): warning C4273: “seeta::FaceDetection::SetMinFaceSize”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(62) : 参见“SetMinFaceSize”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(118): warning C4273: “seeta::FaceDetection::SetMaxFaceSize”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(70) : 参见“SetMaxFaceSize”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(123): warning C4273: “seeta::FaceDetection::SetImagePyramidScaleFactor”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(79) : 参见“SetImagePyramidScaleFactor”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(128): warning C4273: “seeta::FaceDetection::SetWindowStep”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(87) : 参见“SetWindowStep”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceDetection\src\face_detection.cpp(135): warning C4273: “seeta::FaceDetection::SetScoreThresh”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceDetection\include\face_detection.h(96) : 参见“SetScoreThresh”的前一个定义
+         lab_feature_map.cpp
+         surf_feature_map.cpp
+         fust.cpp
+         lab_boost_model_reader.cpp
+         surf_mlp_model_reader.cpp
+         image_pyramid.cpp
+         nms.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.lib" /MACHINE:X64 /DLL x64\Release\lab_boosted_classifier.obj
+         x64\Release\mlp.obj
+         x64\Release\surf_mlp.obj
+         x64\Release\face_detection.obj
+         x64\Release\lab_feature_map.obj
+         x64\Release\surf_feature_map.obj
+         x64\Release\fust.obj
+         x64\Release\lab_boost_model_reader.obj
+         x64\Release\surf_mlp_model_reader.obj
+         x64\Release\image_pyramid.obj
+         x64\Release\nms.obj
+            正在创建库 C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.lib 和对象 C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.exp
+         正在生成代码
+         已完成代码的生成
+         FaceDetection.vcxproj -> C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceDetection.dll
+     1>已完成生成项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\FaceDetection\FaceDetection.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.75

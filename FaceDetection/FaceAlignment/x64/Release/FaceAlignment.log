@@ -1,0 +1,34 @@
+﻿生成启动时间为 2018/4/30 20:40:05。
+     1>项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\FaceAlignment\FaceAlignment.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D FACEALIGNMENT_EXPORTS /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\face_alignment.cpp" "..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\sift.cpp"
+         cfan.cpp
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(166): warning C4305: “初始化”: 从“double”到“float”截断
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(167): warning C4305: “初始化”: 从“double”到“float”截断
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(214): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(247): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(290): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(323): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(394): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\cfan.cpp(395): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+         face_alignment.cpp
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\face_alignment.cpp(46): warning C4273: “seeta::FaceAlignment::FaceAlignment”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceAlignment\include\face_alignment.h(49) : 参见“{ctor}”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\face_alignment.cpp(59): warning C4273: “seeta::FaceAlignment::PointDetectLandmarks”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceAlignment\include\face_alignment.h(61) : 参见“PointDetectLandmarks”的前一个定义
+     1>..\..\..\..\..\Downloads\SeetaFaceEngine-master\FaceAlignment\src\face_alignment.cpp(79): warning C4273: “seeta::FaceAlignment::~FaceAlignment”: dll 链接不一致
+                 C:\Users\Shinelon\Downloads\SeetaFaceEngine-master\FaceAlignment\include\face_alignment.h(54) : 参见“{dtor}”的前一个定义
+         sift.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceAlignment.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceAlignment.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceAlignment.lib" /MACHINE:X64 /DLL x64\Release\cfan.obj
+         x64\Release\face_alignment.obj
+         x64\Release\sift.obj
+            正在创建库 C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceAlignment.lib 和对象 C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceAlignment.exp
+         正在生成代码
+         已完成代码的生成
+         FaceAlignment.vcxproj -> C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\x64\Release\FaceAlignment.dll
+     1>已完成生成项目“C:\Users\Shinelon\Documents\Visual Studio 2013\Projects\FaceDetection\FaceAlignment\FaceAlignment.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.25
