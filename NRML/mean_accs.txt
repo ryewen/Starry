@@ -1,0 +1,11 @@
+KinFaceCornell 7.929825e-01
+KinFaceV2_Old 6.200000e-01
+KinFaceV2_Young 5.850000e-01
+KinFaceW-I_father-dau 7.539886e-01
+KinFaceW-I_father-son 7.664315e-01
+KinFaceW-I_mother-dau 8.306667e-01
+KinFaceW-I_mother-son 7.197464e-01
+KinFaceW-II_father-dau 8.160000e-01
+KinFaceW-II_father-son 8.500000e-01
+KinFaceW-II_mother-dau 8.680000e-01
+KinFaceW-II_mother-son 8.700000e-01

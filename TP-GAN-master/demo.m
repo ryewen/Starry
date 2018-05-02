@@ -6,7 +6,7 @@
 % figure(2);
 % imshow(img_cropped);
 
-txt = fopen('D:\MyKinFace\raw\points.txt', 'rt');
+txt = fopen('D:\MyKinFace\raw\points_plus.txt', 'rt');
 
 while feof(txt) ~= 1
     str = regexp(fgetl(txt), ' ', 'split');

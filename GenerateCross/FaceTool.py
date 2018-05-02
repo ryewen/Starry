@@ -14,16 +14,17 @@ for path in txt:
     i += 1
 txt.close()
 
-txt = open('D:\\MyKinFace\\raw\\nofaces.txt', 'r')
-paths = txt.readlines()
-txt.close()
+#Firstly run FaceTools, then run
+#txt = open('D:\\MyKinFace\\raw\\nofaces.txt', 'r')
+#paths = txt.readlines()
+#txt.close()
 
-txt = open('D:\\Starry\\GenerateCross\\FaceTools-master\\Output\\imagelist_point.list', 'r')
-save = open('D:\\MyKinFace\\raw\\py.txt', 'w')
-for s in txt:    #use FaceTool to decete img points
-    strs = s.split('.jpg')
-    index = int(strs[0].split('\\')[1])
-    paths[index - 1] = paths[index - 1].split('\n')[0] + strs[1]
-save.writelines(paths)
-save.close()
-txt.close()
+#txt = open('D:\\Starry\\GenerateCross\\FaceTools-master\\Output\\imagelist_point.list', 'r')
+#save = open('D:\\MyKinFace\\raw\\py.txt', 'w')
+#for s in txt:    #use FaceTool to decete img points
+#    strs = s.split('.jpg')
+#    index = int(strs[0].split('\\')[1])
+#    paths[index - 1] = paths[index - 1].split('\n')[0] + strs[1]
+#save.writelines(paths)
+#save.close()
+#txt.close()

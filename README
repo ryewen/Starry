@@ -1,0 +1,21 @@
+步骤：
+
+一、将四个亲属数据集(解压放到D盘)复制到一个目录下（D:\MyKinFace\raw），并生成五折实验标签。
+1.GenerateCross目录，运行Cornell.py，V2.py，KinFaceW.py，生成各个数据集的每个Cross的Train，Test标签。
+2.运行TrainLabels.py，在每个Cross文件夹下把每个Train标签随机合并成一个Train标签。
+
+二、人脸特征点检测、对齐
+1.用SeetaFace1得到已检测到特征点的图像（D:\MyKinFace\raw\points.txt）和未检测到特征点的图像（D:\MyKinFace\raw\nofaces.txt）。
+2.接着用GenerateCross\FaceTool.py复制未检测到特征点的图像到D:\MyKinFace\raw\nofaces中，然后用FaceTools检测，再运行GenerateCross\FaceTool.py中的另一部分得到FaceTools检测出来的特征点的图像D:\MyKinFace\raw\py.txt（其中还有未检测的图像）。
+3.再用GenerateCross\hand.m手动点出剩余未检测到的图像特征点D:\MyKinFace\raw\matlab.txt。把matlab.txt其中的数据复制到points.txt中，得到所有的人脸特征点。
+4.用SeetaFace2检测特征点D:\MyKinFace\raw\points2.txt，用GenerateCross\CompleteSeeta2.py把SeetaFace2未检测到的点从points.txt中得到，合并到points_plus.txt中。
+5.用TP-GAN-master\demo.m将人脸对齐，并保存到D:\MyKinFace\pre中。
+
+三、训练
+1.在train目录下，用train_child_1.bat得到第一折训练集的孩子lmdb文件，train_child_mean_1.bat得到均值文件。父母亲同理。
+2.train1.bat开始训练，保存日志到log\cross1.log中。
+3.train\log目录下，plot_loss.bat cross1.log得到损失函数图像。
+
+四、测试
+1.GenerateCross\Means.py得到每一折中每一个数据集的Train和Test均值文件。
+2.使用NRML\cnn中的demo.m测试平均准确率。比如测试A数据集，在第一折中，用第一折的caffemodel，提取A数据集的Train图像特征，和Test特征，然后用Train特征学习NRML度量，用NRML度量去转化Test特征，然后比较亲子特征在NRML上的向量的相似度，计算出第一折的准确率。然后求五折的平均准确率。

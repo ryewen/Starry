@@ -1,10 +1,10 @@
-I0501 12:45:38.928445 11744 upgrade_proto.cpp:1044] Attempting to upgrade input file specified using deprecated 'solver_type' field (enum)': C:\caffe-master\examples\Kinship_demo\train\solver3.prototxt
-I0501 12:45:38.929445 11744 upgrade_proto.cpp:1051] Successfully upgraded file specified using deprecated 'solver_type' field (enum) to 'type' field (string).
-W0501 12:45:38.929445 11744 upgrade_proto.cpp:1053] Note that future Caffe releases will only support 'type' field (string) for a solver's type.
-I0501 12:45:38.929445 11744 caffe.cpp:218] Using GPUs 0
-I0501 12:45:38.979445 11744 caffe.cpp:223] GPU 0: GeForce GTX 1050
-I0501 12:45:39.295445 11744 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
-I0501 12:45:39.295445 11744 solver.cpp:48] Initializing solver from parameters: 
+I0502 12:16:30.613445 13612 upgrade_proto.cpp:1044] Attempting to upgrade input file specified using deprecated 'solver_type' field (enum)': C:\caffe-master\examples\Kinship_demo\train\solver3.prototxt
+I0502 12:16:30.613445 13612 upgrade_proto.cpp:1051] Successfully upgraded file specified using deprecated 'solver_type' field (enum) to 'type' field (string).
+W0502 12:16:30.613445 13612 upgrade_proto.cpp:1053] Note that future Caffe releases will only support 'type' field (string) for a solver's type.
+I0502 12:16:30.613445 13612 caffe.cpp:218] Using GPUs 0
+I0502 12:16:30.714445 13612 caffe.cpp:223] GPU 0: GeForce GTX 1050
+I0502 12:16:32.999445 13612 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
+I0502 12:16:32.999445 13612 solver.cpp:48] Initializing solver from parameters: 
 base_lr: 0.01
 display: 80
 max_iter: 800
@@ -24,8 +24,8 @@ train_state {
 }
 stepvalue: 200
 type: "SGD"
-I0501 12:45:39.295445 11744 solver.cpp:91] Creating training net from net file: C:/caffe-master/examples/Kinship_demo/train/Gk_con_3.prototxt
-I0501 12:45:39.296445 11744 net.cpp:58] Initializing net from parameters: 
+I0502 12:16:33.000445 13612 solver.cpp:91] Creating training net from net file: C:/caffe-master/examples/Kinship_demo/train/Gk_con_3.prototxt
+I0502 12:16:33.002445 13612 net.cpp:58] Initializing net from parameters: 
 name: "Face-ResNet-3L-finetune"
 state {
   phase: TRAIN
@@ -387,260 +387,260 @@ layer {
     margin: 1
   }
 }
-I0501 12:45:39.296445 11744 layer_factory.hpp:77] Creating layer data_l
-I0501 12:45:39.296445 11744 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
-I0501 12:45:39.296445 11744 net.cpp:100] Creating Layer data_l
-I0501 12:45:39.296445 11744 net.cpp:418] data_l -> data_l
-I0501 12:45:39.296445 11744 net.cpp:418] data_l -> label1
-I0501 12:45:39.296445 11744 data_transformer.cpp:25] Loading mean file from: D:/MyKinFace/mean/train_parent3.binaryproto
-I0501 12:45:39.300446  7628 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
-I0501 12:45:39.300446  7628 db_lmdb.cpp:40] Opened lmdb D:/MyKinFace/lmdb/train_parent3
-I0501 12:45:39.333446 11744 data_layer.cpp:41] output data size: 151,3,64,64
-I0501 12:45:39.350445 11744 net.cpp:150] Setting up data_l
-I0501 12:45:39.350445 11744 net.cpp:157] Top shape: 151 3 64 64 (1855488)
-I0501 12:45:39.350445 11744 net.cpp:157] Top shape: 151 (151)
-I0501 12:45:39.350445 11744 net.cpp:165] Memory required for data: 7422556
-I0501 12:45:39.350445 11744 layer_factory.hpp:77] Creating layer label1_data_l_1_split
-I0501 12:45:39.350445 11744 net.cpp:100] Creating Layer label1_data_l_1_split
-I0501 12:45:39.350445 11744 net.cpp:444] label1_data_l_1_split <- label1
-I0501 12:45:39.350445 11744 net.cpp:418] label1_data_l_1_split -> label1_data_l_1_split_0
-I0501 12:45:39.350445 11744 net.cpp:418] label1_data_l_1_split -> label1_data_l_1_split_1
-I0501 12:45:39.350445 11744 net.cpp:150] Setting up label1_data_l_1_split
-I0501 12:45:39.350445 11744 net.cpp:157] Top shape: 151 (151)
-I0501 12:45:39.350445 11744 net.cpp:157] Top shape: 151 (151)
-I0501 12:45:39.350445 11744 net.cpp:165] Memory required for data: 7423764
-I0501 12:45:39.350445 11744 layer_factory.hpp:77] Creating layer data_r
-I0501 12:45:39.350445 11744 net.cpp:100] Creating Layer data_r
-I0501 12:45:39.350445 11744 net.cpp:418] data_r -> data_r
-I0501 12:45:39.350445 11744 net.cpp:418] data_r -> label2
-I0501 12:45:39.350445 11744 data_transformer.cpp:25] Loading mean file from: D:/MyKinFace/mean/train_child3.binaryproto
-I0501 12:45:39.351445 11360 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
-I0501 12:45:39.352445 11596 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
-I0501 12:45:39.352445 11596 db_lmdb.cpp:40] Opened lmdb D:/MyKinFace/lmdb/train_child3
-I0501 12:45:39.353446 11744 data_layer.cpp:41] output data size: 151,3,64,64
-I0501 12:45:39.375445 11744 net.cpp:150] Setting up data_r
-I0501 12:45:39.375445 11744 net.cpp:157] Top shape: 151 3 64 64 (1855488)
-I0501 12:45:39.375445 11744 net.cpp:157] Top shape: 151 (151)
-I0501 12:45:39.375445 11744 net.cpp:165] Memory required for data: 14846320
-I0501 12:45:39.375445 11744 layer_factory.hpp:77] Creating layer concat_data
-I0501 12:45:39.375445 11744 net.cpp:100] Creating Layer concat_data
-I0501 12:45:39.375445 11744 net.cpp:444] concat_data <- data_l
-I0501 12:45:39.375445 11744 net.cpp:444] concat_data <- data_r
-I0501 12:45:39.375445 11744 net.cpp:418] concat_data -> data
-I0501 12:45:39.375445 11744 net.cpp:150] Setting up concat_data
-I0501 12:45:39.375445 11744 net.cpp:157] Top shape: 302 3 64 64 (3710976)
-I0501 12:45:39.375445 11744 net.cpp:165] Memory required for data: 29690224
-I0501 12:45:39.375445 11744 layer_factory.hpp:77] Creating layer conv11
-I0501 12:45:39.375445 11744 net.cpp:100] Creating Layer conv11
-I0501 12:45:39.375445 11744 net.cpp:444] conv11 <- data
-I0501 12:45:39.375445 11744 net.cpp:418] conv11 -> conv11
-I0501 12:45:39.376446 11908 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
-I0501 12:45:39.706445 11744 net.cpp:150] Setting up conv11
-I0501 12:45:39.706445 11744 net.cpp:157] Top shape: 302 6 62 62 (6965328)
-I0501 12:45:39.706445 11744 net.cpp:165] Memory required for data: 57551536
-I0501 12:45:39.706445 11744 layer_factory.hpp:77] Creating layer conv12
-I0501 12:45:39.706445 11744 net.cpp:100] Creating Layer conv12
-I0501 12:45:39.706445 11744 net.cpp:444] conv12 <- conv11
-I0501 12:45:39.706445 11744 net.cpp:418] conv12 -> conv12
-I0501 12:45:39.708446 11744 net.cpp:150] Setting up conv12
-I0501 12:45:39.708446 11744 net.cpp:157] Top shape: 302 6 60 60 (6523200)
-I0501 12:45:39.708446 11744 net.cpp:165] Memory required for data: 83644336
-I0501 12:45:39.708446 11744 layer_factory.hpp:77] Creating layer pool1
-I0501 12:45:39.708446 11744 net.cpp:100] Creating Layer pool1
-I0501 12:45:39.708446 11744 net.cpp:444] pool1 <- conv12
-I0501 12:45:39.708446 11744 net.cpp:418] pool1 -> pool1
-I0501 12:45:39.708446 11744 net.cpp:150] Setting up pool1
-I0501 12:45:39.708446 11744 net.cpp:157] Top shape: 302 6 30 30 (1630800)
-I0501 12:45:39.708446 11744 net.cpp:165] Memory required for data: 90167536
-I0501 12:45:39.708446 11744 layer_factory.hpp:77] Creating layer conv21
-I0501 12:45:39.708446 11744 net.cpp:100] Creating Layer conv21
-I0501 12:45:39.708446 11744 net.cpp:444] conv21 <- pool1
-I0501 12:45:39.708446 11744 net.cpp:418] conv21 -> conv21
-I0501 12:45:39.709445 11744 net.cpp:150] Setting up conv21
-I0501 12:45:39.709445 11744 net.cpp:157] Top shape: 302 16 28 28 (3788288)
-I0501 12:45:39.709445 11744 net.cpp:165] Memory required for data: 105320688
-I0501 12:45:39.709445 11744 layer_factory.hpp:77] Creating layer conv22
-I0501 12:45:39.709445 11744 net.cpp:100] Creating Layer conv22
-I0501 12:45:39.709445 11744 net.cpp:444] conv22 <- conv21
-I0501 12:45:39.709445 11744 net.cpp:418] conv22 -> conv22
-I0501 12:45:39.710445 11744 net.cpp:150] Setting up conv22
-I0501 12:45:39.710445 11744 net.cpp:157] Top shape: 302 16 26 26 (3266432)
-I0501 12:45:39.710445 11744 net.cpp:165] Memory required for data: 118386416
-I0501 12:45:39.710445 11744 layer_factory.hpp:77] Creating layer pool2
-I0501 12:45:39.710445 11744 net.cpp:100] Creating Layer pool2
-I0501 12:45:39.710445 11744 net.cpp:444] pool2 <- conv22
-I0501 12:45:39.710445 11744 net.cpp:418] pool2 -> pool2
-I0501 12:45:39.710445 11744 net.cpp:150] Setting up pool2
-I0501 12:45:39.710445 11744 net.cpp:157] Top shape: 302 16 13 13 (816608)
-I0501 12:45:39.710445 11744 net.cpp:165] Memory required for data: 121652848
-I0501 12:45:39.710445 11744 layer_factory.hpp:77] Creating layer conv31
-I0501 12:45:39.710445 11744 net.cpp:100] Creating Layer conv31
-I0501 12:45:39.710445 11744 net.cpp:444] conv31 <- pool2
-I0501 12:45:39.710445 11744 net.cpp:418] conv31 -> conv31
-I0501 12:45:39.711446 11744 net.cpp:150] Setting up conv31
-I0501 12:45:39.711446 11744 net.cpp:157] Top shape: 302 30 12 12 (1304640)
-I0501 12:45:39.711446 11744 net.cpp:165] Memory required for data: 126871408
-I0501 12:45:39.712445 11744 layer_factory.hpp:77] Creating layer conv32
-I0501 12:45:39.712445 11744 net.cpp:100] Creating Layer conv32
-I0501 12:45:39.712445 11744 net.cpp:444] conv32 <- conv31
-I0501 12:45:39.712445 11744 net.cpp:418] conv32 -> conv32
-I0501 12:45:39.713445 11744 net.cpp:150] Setting up conv32
-I0501 12:45:39.713445 11744 net.cpp:157] Top shape: 302 30 11 11 (1096260)
-I0501 12:45:39.713445 11744 net.cpp:165] Memory required for data: 131256448
-I0501 12:45:39.713445 11744 layer_factory.hpp:77] Creating layer pool3
-I0501 12:45:39.713445 11744 net.cpp:100] Creating Layer pool3
-I0501 12:45:39.713445 11744 net.cpp:444] pool3 <- conv32
-I0501 12:45:39.713445 11744 net.cpp:418] pool3 -> pool3
-I0501 12:45:39.713445 11744 net.cpp:150] Setting up pool3
-I0501 12:45:39.713445 11744 net.cpp:157] Top shape: 302 30 6 6 (326160)
-I0501 12:45:39.713445 11744 net.cpp:165] Memory required for data: 132561088
-I0501 12:45:39.713445 11744 layer_factory.hpp:77] Creating layer conv41
-I0501 12:45:39.713445 11744 net.cpp:100] Creating Layer conv41
-I0501 12:45:39.713445 11744 net.cpp:444] conv41 <- pool3
-I0501 12:45:39.713445 11744 net.cpp:418] conv41 -> conv41
-I0501 12:45:39.714445 11744 net.cpp:150] Setting up conv41
-I0501 12:45:39.714445 11744 net.cpp:157] Top shape: 302 60 4 4 (289920)
-I0501 12:45:39.714445 11744 net.cpp:165] Memory required for data: 133720768
-I0501 12:45:39.714445 11744 layer_factory.hpp:77] Creating layer ip1
-I0501 12:45:39.714445 11744 net.cpp:100] Creating Layer ip1
-I0501 12:45:39.714445 11744 net.cpp:444] ip1 <- conv41
-I0501 12:45:39.714445 11744 net.cpp:418] ip1 -> ip1
-I0501 12:45:39.716445 11744 net.cpp:150] Setting up ip1
-I0501 12:45:39.716445 11744 net.cpp:157] Top shape: 302 128 (38656)
-I0501 12:45:39.716445 11744 net.cpp:165] Memory required for data: 133875392
-I0501 12:45:39.716445 11744 layer_factory.hpp:77] Creating layer relu1
-I0501 12:45:39.716445 11744 net.cpp:100] Creating Layer relu1
-I0501 12:45:39.716445 11744 net.cpp:444] relu1 <- ip1
-I0501 12:45:39.716445 11744 net.cpp:405] relu1 -> ip1 (in-place)
-I0501 12:45:39.716445 11744 net.cpp:150] Setting up relu1
-I0501 12:45:39.716445 11744 net.cpp:157] Top shape: 302 128 (38656)
-I0501 12:45:39.716445 11744 net.cpp:165] Memory required for data: 134030016
-I0501 12:45:39.716445 11744 layer_factory.hpp:77] Creating layer ip1_relu1_0_split
-I0501 12:45:39.716445 11744 net.cpp:100] Creating Layer ip1_relu1_0_split
-I0501 12:45:39.716445 11744 net.cpp:444] ip1_relu1_0_split <- ip1
-I0501 12:45:39.716445 11744 net.cpp:418] ip1_relu1_0_split -> ip1_relu1_0_split_0
-I0501 12:45:39.716445 11744 net.cpp:418] ip1_relu1_0_split -> ip1_relu1_0_split_1
-I0501 12:45:39.716445 11744 net.cpp:150] Setting up ip1_relu1_0_split
-I0501 12:45:39.716445 11744 net.cpp:157] Top shape: 302 128 (38656)
-I0501 12:45:39.716445 11744 net.cpp:157] Top shape: 302 128 (38656)
-I0501 12:45:39.716445 11744 net.cpp:165] Memory required for data: 134339264
-I0501 12:45:39.716445 11744 layer_factory.hpp:77] Creating layer feat
-I0501 12:45:39.716445 11744 net.cpp:100] Creating Layer feat
-I0501 12:45:39.716445 11744 net.cpp:444] feat <- ip1_relu1_0_split_0
-I0501 12:45:39.716445 11744 net.cpp:418] feat -> feat
-I0501 12:45:39.717445 11744 net.cpp:150] Setting up feat
-I0501 12:45:39.717445 11744 net.cpp:157] Top shape: 302 80 (24160)
-I0501 12:45:39.717445 11744 net.cpp:165] Memory required for data: 134435904
-I0501 12:45:39.717445 11744 layer_factory.hpp:77] Creating layer slice_features_ip1
-I0501 12:45:39.717445 11744 net.cpp:100] Creating Layer slice_features_ip1
-I0501 12:45:39.717445 11744 net.cpp:444] slice_features_ip1 <- ip1_relu1_0_split_1
-I0501 12:45:39.717445 11744 net.cpp:418] slice_features_ip1 -> ip1_l
-I0501 12:45:39.717445 11744 net.cpp:418] slice_features_ip1 -> ip1_r
-I0501 12:45:39.717445 11744 net.cpp:150] Setting up slice_features_ip1
-I0501 12:45:39.717445 11744 net.cpp:157] Top shape: 151 128 (19328)
-I0501 12:45:39.717445 11744 net.cpp:157] Top shape: 151 128 (19328)
-I0501 12:45:39.717445 11744 net.cpp:165] Memory required for data: 134590528
-I0501 12:45:39.717445 11744 layer_factory.hpp:77] Creating layer ker_loss
-I0501 12:45:39.717445 11744 net.cpp:100] Creating Layer ker_loss
-I0501 12:45:39.717445 11744 net.cpp:444] ker_loss <- ip1_l
-I0501 12:45:39.717445 11744 net.cpp:444] ker_loss <- ip1_r
-I0501 12:45:39.717445 11744 net.cpp:444] ker_loss <- label1_data_l_1_split_0
-I0501 12:45:39.717445 11744 net.cpp:444] ker_loss <- label2
-I0501 12:45:39.717445 11744 net.cpp:418] ker_loss -> ker_loss
-I0501 12:45:39.717445 11744 net.cpp:150] Setting up ker_loss
-I0501 12:45:39.717445 11744 net.cpp:157] Top shape: (1)
-I0501 12:45:39.717445 11744 net.cpp:160]     with loss weight 1
-I0501 12:45:39.717445 11744 net.cpp:165] Memory required for data: 134590532
-I0501 12:45:39.717445 11744 layer_factory.hpp:77] Creating layer slice_features_feat
-I0501 12:45:39.717445 11744 net.cpp:100] Creating Layer slice_features_feat
-I0501 12:45:39.717445 11744 net.cpp:444] slice_features_feat <- feat
-I0501 12:45:39.717445 11744 net.cpp:418] slice_features_feat -> feat_l
-I0501 12:45:39.717445 11744 net.cpp:418] slice_features_feat -> feat_r
-I0501 12:45:39.717445 11744 net.cpp:150] Setting up slice_features_feat
-I0501 12:45:39.717445 11744 net.cpp:157] Top shape: 151 80 (12080)
-I0501 12:45:39.717445 11744 net.cpp:157] Top shape: 151 80 (12080)
-I0501 12:45:39.717445 11744 net.cpp:165] Memory required for data: 134687172
-I0501 12:45:39.717445 11744 layer_factory.hpp:77] Creating layer loss
-I0501 12:45:39.717445 11744 net.cpp:100] Creating Layer loss
-I0501 12:45:39.717445 11744 net.cpp:444] loss <- feat_l
-I0501 12:45:39.717445 11744 net.cpp:444] loss <- feat_r
-I0501 12:45:39.717445 11744 net.cpp:444] loss <- label1_data_l_1_split_1
-I0501 12:45:39.717445 11744 net.cpp:418] loss -> loss
-I0501 12:45:39.717445 11744 net.cpp:150] Setting up loss
-I0501 12:45:39.717445 11744 net.cpp:157] Top shape: (1)
-I0501 12:45:39.717445 11744 net.cpp:160]     with loss weight 1
-I0501 12:45:39.717445 11744 net.cpp:165] Memory required for data: 134687176
-I0501 12:45:39.717445 11744 net.cpp:226] loss needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] slice_features_feat needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] ker_loss needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] slice_features_ip1 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] feat needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] ip1_relu1_0_split needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] relu1 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] ip1 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] conv41 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] pool3 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] conv32 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] conv31 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] pool2 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] conv22 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] conv21 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] pool1 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] conv12 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:226] conv11 needs backward computation.
-I0501 12:45:39.717445 11744 net.cpp:228] concat_data does not need backward computation.
-I0501 12:45:39.717445 11744 net.cpp:228] data_r does not need backward computation.
-I0501 12:45:39.717445 11744 net.cpp:228] label1_data_l_1_split does not need backward computation.
-I0501 12:45:39.717445 11744 net.cpp:228] data_l does not need backward computation.
-I0501 12:45:39.717445 11744 net.cpp:270] This network produces output ker_loss
-I0501 12:45:39.717445 11744 net.cpp:270] This network produces output loss
-I0501 12:45:39.717445 11744 net.cpp:283] Network initialization done.
-I0501 12:45:39.718446 11744 solver.cpp:60] Solver scaffolding done.
-I0501 12:45:39.718446 11744 caffe.cpp:252] Starting Optimization
-I0501 12:45:39.718446 11744 solver.cpp:279] Solving Face-ResNet-3L-finetune
-I0501 12:45:39.718446 11744 solver.cpp:280] Learning Rate Policy: fixed
-I0501 12:45:39.800446 11744 solver.cpp:228] Iteration 0, loss = -0.333035
-I0501 12:45:39.800446 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.561661 (* 1 = -0.561661 loss)
-I0501 12:45:39.800446 11744 solver.cpp:244]     Train net output #1: loss = 0.228626 (* 1 = 0.228626 loss)
-I0501 12:45:39.800446 11744 sgd_solver.cpp:106] Iteration 0, lr = 0.01
-I0501 12:45:43.815445 11744 solver.cpp:228] Iteration 80, loss = -0.0868581
-I0501 12:45:43.815445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.184734 (* 1 = -0.184734 loss)
-I0501 12:45:43.815445 11744 solver.cpp:244]     Train net output #1: loss = 0.097876 (* 1 = 0.097876 loss)
-I0501 12:45:43.815445 11744 sgd_solver.cpp:106] Iteration 80, lr = 0.01
-I0501 12:45:47.776445 11744 solver.cpp:228] Iteration 160, loss = -0.09548
-I0501 12:45:47.776445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.180222 (* 1 = -0.180222 loss)
-I0501 12:45:47.776445 11744 solver.cpp:244]     Train net output #1: loss = 0.084742 (* 1 = 0.084742 loss)
-I0501 12:45:47.776445 11744 sgd_solver.cpp:106] Iteration 160, lr = 0.01
-I0501 12:45:51.756445 11744 solver.cpp:228] Iteration 240, loss = -0.0796678
-I0501 12:45:51.756445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.163726 (* 1 = -0.163726 loss)
-I0501 12:45:51.756445 11744 solver.cpp:244]     Train net output #1: loss = 0.0840581 (* 1 = 0.0840581 loss)
-I0501 12:45:51.756445 11744 sgd_solver.cpp:106] Iteration 240, lr = 0.01
-I0501 12:45:55.732445 11744 solver.cpp:228] Iteration 320, loss = -0.0754787
-I0501 12:45:55.732445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.156636 (* 1 = -0.156636 loss)
-I0501 12:45:55.732445 11744 solver.cpp:244]     Train net output #1: loss = 0.0811573 (* 1 = 0.0811573 loss)
-I0501 12:45:55.732445 11744 sgd_solver.cpp:106] Iteration 320, lr = 0.01
-I0501 12:45:59.717445 11744 solver.cpp:228] Iteration 400, loss = -0.0847105
-I0501 12:45:59.717445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.172849 (* 1 = -0.172849 loss)
-I0501 12:45:59.717445 11744 solver.cpp:244]     Train net output #1: loss = 0.088138 (* 1 = 0.088138 loss)
-I0501 12:45:59.717445 11744 sgd_solver.cpp:106] Iteration 400, lr = 0.01
-I0501 12:46:03.719445 11744 solver.cpp:228] Iteration 480, loss = -0.0940528
-I0501 12:46:03.719445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.162854 (* 1 = -0.162854 loss)
-I0501 12:46:03.719445 11744 solver.cpp:244]     Train net output #1: loss = 0.0688013 (* 1 = 0.0688013 loss)
-I0501 12:46:03.719445 11744 sgd_solver.cpp:106] Iteration 480, lr = 0.01
-I0501 12:46:07.724445 11744 solver.cpp:228] Iteration 560, loss = -0.0902167
-I0501 12:46:07.724445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.180388 (* 1 = -0.180388 loss)
-I0501 12:46:07.724445 11744 solver.cpp:244]     Train net output #1: loss = 0.0901712 (* 1 = 0.0901712 loss)
-I0501 12:46:07.724445 11744 sgd_solver.cpp:106] Iteration 560, lr = 0.01
-I0501 12:46:11.719445 11744 solver.cpp:228] Iteration 640, loss = -0.114715
-I0501 12:46:11.719445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.185485 (* 1 = -0.185485 loss)
-I0501 12:46:11.719445 11744 solver.cpp:244]     Train net output #1: loss = 0.0707704 (* 1 = 0.0707704 loss)
-I0501 12:46:11.719445 11744 sgd_solver.cpp:106] Iteration 640, lr = 0.01
-I0501 12:46:15.715445 11744 solver.cpp:228] Iteration 720, loss = -0.0571255
-I0501 12:46:15.715445 11744 solver.cpp:244]     Train net output #0: ker_loss = -0.150259 (* 1 = -0.150259 loss)
-I0501 12:46:15.715445 11744 solver.cpp:244]     Train net output #1: loss = 0.0931332 (* 1 = 0.0931332 loss)
-I0501 12:46:15.715445 11744 sgd_solver.cpp:106] Iteration 720, lr = 0.01
-I0501 12:46:19.665446 11744 solver.cpp:454] Snapshotting to binary proto file D:/MyKinFace/model/new3_iter_800.caffemodel
-I0501 12:46:19.700445 11744 sgd_solver.cpp:273] Snapshotting solver state to binary proto file D:/MyKinFace/model/new3_iter_800.solverstate
-I0501 12:46:19.999445 11744 solver.cpp:317] Iteration 800, loss = -0.0907549
-I0501 12:46:19.999445 11744 solver.cpp:322] Optimization Done.
-I0501 12:46:19.999445 11744 caffe.cpp:255] Optimization Done.
+I0502 12:16:33.002445 13612 layer_factory.hpp:77] Creating layer data_l
+I0502 12:16:33.002445 13612 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
+I0502 12:16:33.002445 13612 net.cpp:100] Creating Layer data_l
+I0502 12:16:33.002445 13612 net.cpp:418] data_l -> data_l
+I0502 12:16:33.002445 13612 net.cpp:418] data_l -> label1
+I0502 12:16:33.002445 13612 data_transformer.cpp:25] Loading mean file from: D:/MyKinFace/mean/train_parent3.binaryproto
+I0502 12:16:33.104445  7236 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
+I0502 12:16:33.104445  7236 db_lmdb.cpp:40] Opened lmdb D:/MyKinFace/lmdb/train_parent3
+I0502 12:16:33.549445 13612 data_layer.cpp:41] output data size: 151,3,64,64
+I0502 12:16:33.681445 13612 net.cpp:150] Setting up data_l
+I0502 12:16:33.681445 13612 net.cpp:157] Top shape: 151 3 64 64 (1855488)
+I0502 12:16:33.681445 13612 net.cpp:157] Top shape: 151 (151)
+I0502 12:16:33.681445 13612 net.cpp:165] Memory required for data: 7422556
+I0502 12:16:33.681445 13612 layer_factory.hpp:77] Creating layer label1_data_l_1_split
+I0502 12:16:33.681445 13612 net.cpp:100] Creating Layer label1_data_l_1_split
+I0502 12:16:33.681445 13612 net.cpp:444] label1_data_l_1_split <- label1
+I0502 12:16:33.681445 13612 net.cpp:418] label1_data_l_1_split -> label1_data_l_1_split_0
+I0502 12:16:33.681445 13612 net.cpp:418] label1_data_l_1_split -> label1_data_l_1_split_1
+I0502 12:16:33.681445 13612 net.cpp:150] Setting up label1_data_l_1_split
+I0502 12:16:33.681445 13612 net.cpp:157] Top shape: 151 (151)
+I0502 12:16:33.681445 13612 net.cpp:157] Top shape: 151 (151)
+I0502 12:16:33.681445 13612 net.cpp:165] Memory required for data: 7423764
+I0502 12:16:33.681445 13612 layer_factory.hpp:77] Creating layer data_r
+I0502 12:16:33.681445 13612 net.cpp:100] Creating Layer data_r
+I0502 12:16:33.681445 13612 net.cpp:418] data_r -> data_r
+I0502 12:16:33.681445 13612 net.cpp:418] data_r -> label2
+I0502 12:16:33.681445 13612 data_transformer.cpp:25] Loading mean file from: D:/MyKinFace/mean/train_child3.binaryproto
+I0502 12:16:33.683445 11380 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
+I0502 12:16:33.684445  7152 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
+I0502 12:16:33.685446  7152 db_lmdb.cpp:40] Opened lmdb D:/MyKinFace/lmdb/train_child3
+I0502 12:16:33.691445 13612 data_layer.cpp:41] output data size: 151,3,64,64
+I0502 12:16:33.793445 13612 net.cpp:150] Setting up data_r
+I0502 12:16:33.793445 13612 net.cpp:157] Top shape: 151 3 64 64 (1855488)
+I0502 12:16:33.793445 13612 net.cpp:157] Top shape: 151 (151)
+I0502 12:16:33.793445 13612 net.cpp:165] Memory required for data: 14846320
+I0502 12:16:33.793445 13612 layer_factory.hpp:77] Creating layer concat_data
+I0502 12:16:33.793445 13612 net.cpp:100] Creating Layer concat_data
+I0502 12:16:33.793445 13612 net.cpp:444] concat_data <- data_l
+I0502 12:16:33.793445 13612 net.cpp:444] concat_data <- data_r
+I0502 12:16:33.793445 13612 net.cpp:418] concat_data -> data
+I0502 12:16:33.793445 13612 net.cpp:150] Setting up concat_data
+I0502 12:16:33.793445 13612 net.cpp:157] Top shape: 302 3 64 64 (3710976)
+I0502 12:16:33.793445 13612 net.cpp:165] Memory required for data: 29690224
+I0502 12:16:33.793445 13612 layer_factory.hpp:77] Creating layer conv11
+I0502 12:16:33.793445 13612 net.cpp:100] Creating Layer conv11
+I0502 12:16:33.793445 13612 net.cpp:444] conv11 <- data
+I0502 12:16:33.793445 13612 net.cpp:418] conv11 -> conv11
+I0502 12:16:33.795445 12560 common.cpp:36] System entropy source not available, using fallback algorithm to generate seed instead.
+I0502 12:16:36.396445 13612 net.cpp:150] Setting up conv11
+I0502 12:16:36.396445 13612 net.cpp:157] Top shape: 302 6 62 62 (6965328)
+I0502 12:16:36.396445 13612 net.cpp:165] Memory required for data: 57551536
+I0502 12:16:36.396445 13612 layer_factory.hpp:77] Creating layer conv12
+I0502 12:16:36.396445 13612 net.cpp:100] Creating Layer conv12
+I0502 12:16:36.396445 13612 net.cpp:444] conv12 <- conv11
+I0502 12:16:36.396445 13612 net.cpp:418] conv12 -> conv12
+I0502 12:16:36.454445 13612 net.cpp:150] Setting up conv12
+I0502 12:16:36.454445 13612 net.cpp:157] Top shape: 302 6 60 60 (6523200)
+I0502 12:16:36.454445 13612 net.cpp:165] Memory required for data: 83644336
+I0502 12:16:36.455446 13612 layer_factory.hpp:77] Creating layer pool1
+I0502 12:16:36.456445 13612 net.cpp:100] Creating Layer pool1
+I0502 12:16:36.456445 13612 net.cpp:444] pool1 <- conv12
+I0502 12:16:36.456445 13612 net.cpp:418] pool1 -> pool1
+I0502 12:16:36.456445 13612 net.cpp:150] Setting up pool1
+I0502 12:16:36.456445 13612 net.cpp:157] Top shape: 302 6 30 30 (1630800)
+I0502 12:16:36.456445 13612 net.cpp:165] Memory required for data: 90167536
+I0502 12:16:36.456445 13612 layer_factory.hpp:77] Creating layer conv21
+I0502 12:16:36.456445 13612 net.cpp:100] Creating Layer conv21
+I0502 12:16:36.456445 13612 net.cpp:444] conv21 <- pool1
+I0502 12:16:36.456445 13612 net.cpp:418] conv21 -> conv21
+I0502 12:16:36.501446 13612 net.cpp:150] Setting up conv21
+I0502 12:16:36.501446 13612 net.cpp:157] Top shape: 302 16 28 28 (3788288)
+I0502 12:16:36.501446 13612 net.cpp:165] Memory required for data: 105320688
+I0502 12:16:36.501446 13612 layer_factory.hpp:77] Creating layer conv22
+I0502 12:16:36.501446 13612 net.cpp:100] Creating Layer conv22
+I0502 12:16:36.501446 13612 net.cpp:444] conv22 <- conv21
+I0502 12:16:36.501446 13612 net.cpp:418] conv22 -> conv22
+I0502 12:16:36.514446 13612 net.cpp:150] Setting up conv22
+I0502 12:16:36.515445 13612 net.cpp:157] Top shape: 302 16 26 26 (3266432)
+I0502 12:16:36.515445 13612 net.cpp:165] Memory required for data: 118386416
+I0502 12:16:36.515445 13612 layer_factory.hpp:77] Creating layer pool2
+I0502 12:16:36.515445 13612 net.cpp:100] Creating Layer pool2
+I0502 12:16:36.515445 13612 net.cpp:444] pool2 <- conv22
+I0502 12:16:36.515445 13612 net.cpp:418] pool2 -> pool2
+I0502 12:16:36.515445 13612 net.cpp:150] Setting up pool2
+I0502 12:16:36.515445 13612 net.cpp:157] Top shape: 302 16 13 13 (816608)
+I0502 12:16:36.515445 13612 net.cpp:165] Memory required for data: 121652848
+I0502 12:16:36.515445 13612 layer_factory.hpp:77] Creating layer conv31
+I0502 12:16:36.515445 13612 net.cpp:100] Creating Layer conv31
+I0502 12:16:36.515445 13612 net.cpp:444] conv31 <- pool2
+I0502 12:16:36.515445 13612 net.cpp:418] conv31 -> conv31
+I0502 12:16:36.517446 13612 net.cpp:150] Setting up conv31
+I0502 12:16:36.517446 13612 net.cpp:157] Top shape: 302 30 12 12 (1304640)
+I0502 12:16:36.517446 13612 net.cpp:165] Memory required for data: 126871408
+I0502 12:16:36.517446 13612 layer_factory.hpp:77] Creating layer conv32
+I0502 12:16:36.522445 13612 net.cpp:100] Creating Layer conv32
+I0502 12:16:36.522445 13612 net.cpp:444] conv32 <- conv31
+I0502 12:16:36.522445 13612 net.cpp:418] conv32 -> conv32
+I0502 12:16:36.583446 13612 net.cpp:150] Setting up conv32
+I0502 12:16:36.583446 13612 net.cpp:157] Top shape: 302 30 11 11 (1096260)
+I0502 12:16:36.583446 13612 net.cpp:165] Memory required for data: 131256448
+I0502 12:16:36.583446 13612 layer_factory.hpp:77] Creating layer pool3
+I0502 12:16:36.583446 13612 net.cpp:100] Creating Layer pool3
+I0502 12:16:36.583446 13612 net.cpp:444] pool3 <- conv32
+I0502 12:16:36.583446 13612 net.cpp:418] pool3 -> pool3
+I0502 12:16:36.583446 13612 net.cpp:150] Setting up pool3
+I0502 12:16:36.583446 13612 net.cpp:157] Top shape: 302 30 6 6 (326160)
+I0502 12:16:36.583446 13612 net.cpp:165] Memory required for data: 132561088
+I0502 12:16:36.583446 13612 layer_factory.hpp:77] Creating layer conv41
+I0502 12:16:36.583446 13612 net.cpp:100] Creating Layer conv41
+I0502 12:16:36.583446 13612 net.cpp:444] conv41 <- pool3
+I0502 12:16:36.583446 13612 net.cpp:418] conv41 -> conv41
+I0502 12:16:36.586446 13612 net.cpp:150] Setting up conv41
+I0502 12:16:36.586446 13612 net.cpp:157] Top shape: 302 60 4 4 (289920)
+I0502 12:16:36.586446 13612 net.cpp:165] Memory required for data: 133720768
+I0502 12:16:36.586446 13612 layer_factory.hpp:77] Creating layer ip1
+I0502 12:16:36.586446 13612 net.cpp:100] Creating Layer ip1
+I0502 12:16:36.586446 13612 net.cpp:444] ip1 <- conv41
+I0502 12:16:36.586446 13612 net.cpp:418] ip1 -> ip1
+I0502 12:16:36.601445 13612 net.cpp:150] Setting up ip1
+I0502 12:16:36.601445 13612 net.cpp:157] Top shape: 302 128 (38656)
+I0502 12:16:36.601445 13612 net.cpp:165] Memory required for data: 133875392
+I0502 12:16:36.601445 13612 layer_factory.hpp:77] Creating layer relu1
+I0502 12:16:36.601445 13612 net.cpp:100] Creating Layer relu1
+I0502 12:16:36.601445 13612 net.cpp:444] relu1 <- ip1
+I0502 12:16:36.601445 13612 net.cpp:405] relu1 -> ip1 (in-place)
+I0502 12:16:36.601445 13612 net.cpp:150] Setting up relu1
+I0502 12:16:36.601445 13612 net.cpp:157] Top shape: 302 128 (38656)
+I0502 12:16:36.601445 13612 net.cpp:165] Memory required for data: 134030016
+I0502 12:16:36.601445 13612 layer_factory.hpp:77] Creating layer ip1_relu1_0_split
+I0502 12:16:36.601445 13612 net.cpp:100] Creating Layer ip1_relu1_0_split
+I0502 12:16:36.601445 13612 net.cpp:444] ip1_relu1_0_split <- ip1
+I0502 12:16:36.601445 13612 net.cpp:418] ip1_relu1_0_split -> ip1_relu1_0_split_0
+I0502 12:16:36.601445 13612 net.cpp:418] ip1_relu1_0_split -> ip1_relu1_0_split_1
+I0502 12:16:36.601445 13612 net.cpp:150] Setting up ip1_relu1_0_split
+I0502 12:16:36.601445 13612 net.cpp:157] Top shape: 302 128 (38656)
+I0502 12:16:36.601445 13612 net.cpp:157] Top shape: 302 128 (38656)
+I0502 12:16:36.601445 13612 net.cpp:165] Memory required for data: 134339264
+I0502 12:16:36.601445 13612 layer_factory.hpp:77] Creating layer feat
+I0502 12:16:36.601445 13612 net.cpp:100] Creating Layer feat
+I0502 12:16:36.601445 13612 net.cpp:444] feat <- ip1_relu1_0_split_0
+I0502 12:16:36.601445 13612 net.cpp:418] feat -> feat
+I0502 12:16:36.602445 13612 net.cpp:150] Setting up feat
+I0502 12:16:36.602445 13612 net.cpp:157] Top shape: 302 80 (24160)
+I0502 12:16:36.602445 13612 net.cpp:165] Memory required for data: 134435904
+I0502 12:16:36.602445 13612 layer_factory.hpp:77] Creating layer slice_features_ip1
+I0502 12:16:36.602445 13612 net.cpp:100] Creating Layer slice_features_ip1
+I0502 12:16:36.602445 13612 net.cpp:444] slice_features_ip1 <- ip1_relu1_0_split_1
+I0502 12:16:36.602445 13612 net.cpp:418] slice_features_ip1 -> ip1_l
+I0502 12:16:36.602445 13612 net.cpp:418] slice_features_ip1 -> ip1_r
+I0502 12:16:36.602445 13612 net.cpp:150] Setting up slice_features_ip1
+I0502 12:16:36.602445 13612 net.cpp:157] Top shape: 151 128 (19328)
+I0502 12:16:36.602445 13612 net.cpp:157] Top shape: 151 128 (19328)
+I0502 12:16:36.602445 13612 net.cpp:165] Memory required for data: 134590528
+I0502 12:16:36.602445 13612 layer_factory.hpp:77] Creating layer ker_loss
+I0502 12:16:36.602445 13612 net.cpp:100] Creating Layer ker_loss
+I0502 12:16:36.602445 13612 net.cpp:444] ker_loss <- ip1_l
+I0502 12:16:36.602445 13612 net.cpp:444] ker_loss <- ip1_r
+I0502 12:16:36.602445 13612 net.cpp:444] ker_loss <- label1_data_l_1_split_0
+I0502 12:16:36.602445 13612 net.cpp:444] ker_loss <- label2
+I0502 12:16:36.602445 13612 net.cpp:418] ker_loss -> ker_loss
+I0502 12:16:36.602445 13612 net.cpp:150] Setting up ker_loss
+I0502 12:16:36.602445 13612 net.cpp:157] Top shape: (1)
+I0502 12:16:36.602445 13612 net.cpp:160]     with loss weight 1
+I0502 12:16:36.602445 13612 net.cpp:165] Memory required for data: 134590532
+I0502 12:16:36.602445 13612 layer_factory.hpp:77] Creating layer slice_features_feat
+I0502 12:16:36.602445 13612 net.cpp:100] Creating Layer slice_features_feat
+I0502 12:16:36.602445 13612 net.cpp:444] slice_features_feat <- feat
+I0502 12:16:36.602445 13612 net.cpp:418] slice_features_feat -> feat_l
+I0502 12:16:36.602445 13612 net.cpp:418] slice_features_feat -> feat_r
+I0502 12:16:36.602445 13612 net.cpp:150] Setting up slice_features_feat
+I0502 12:16:36.602445 13612 net.cpp:157] Top shape: 151 80 (12080)
+I0502 12:16:36.602445 13612 net.cpp:157] Top shape: 151 80 (12080)
+I0502 12:16:36.602445 13612 net.cpp:165] Memory required for data: 134687172
+I0502 12:16:36.602445 13612 layer_factory.hpp:77] Creating layer loss
+I0502 12:16:36.603446 13612 net.cpp:100] Creating Layer loss
+I0502 12:16:36.603446 13612 net.cpp:444] loss <- feat_l
+I0502 12:16:36.603446 13612 net.cpp:444] loss <- feat_r
+I0502 12:16:36.603446 13612 net.cpp:444] loss <- label1_data_l_1_split_1
+I0502 12:16:36.603446 13612 net.cpp:418] loss -> loss
+I0502 12:16:36.603446 13612 net.cpp:150] Setting up loss
+I0502 12:16:36.603446 13612 net.cpp:157] Top shape: (1)
+I0502 12:16:36.603446 13612 net.cpp:160]     with loss weight 1
+I0502 12:16:36.603446 13612 net.cpp:165] Memory required for data: 134687176
+I0502 12:16:36.603446 13612 net.cpp:226] loss needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] slice_features_feat needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] ker_loss needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] slice_features_ip1 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] feat needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] ip1_relu1_0_split needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] relu1 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] ip1 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] conv41 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] pool3 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] conv32 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] conv31 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] pool2 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] conv22 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] conv21 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] pool1 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] conv12 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:226] conv11 needs backward computation.
+I0502 12:16:36.603446 13612 net.cpp:228] concat_data does not need backward computation.
+I0502 12:16:36.603446 13612 net.cpp:228] data_r does not need backward computation.
+I0502 12:16:36.603446 13612 net.cpp:228] label1_data_l_1_split does not need backward computation.
+I0502 12:16:36.603446 13612 net.cpp:228] data_l does not need backward computation.
+I0502 12:16:36.603446 13612 net.cpp:270] This network produces output ker_loss
+I0502 12:16:36.603446 13612 net.cpp:270] This network produces output loss
+I0502 12:16:36.603446 13612 net.cpp:283] Network initialization done.
+I0502 12:16:36.603446 13612 solver.cpp:60] Solver scaffolding done.
+I0502 12:16:36.604445 13612 caffe.cpp:252] Starting Optimization
+I0502 12:16:36.604445 13612 solver.cpp:279] Solving Face-ResNet-3L-finetune
+I0502 12:16:36.604445 13612 solver.cpp:280] Learning Rate Policy: fixed
+I0502 12:16:37.201445 13612 solver.cpp:228] Iteration 0, loss = -0.325449
+I0502 12:16:37.201445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.705235 (* 1 = -0.705235 loss)
+I0502 12:16:37.201445 13612 solver.cpp:244]     Train net output #1: loss = 0.379786 (* 1 = 0.379786 loss)
+I0502 12:16:37.201445 13612 sgd_solver.cpp:106] Iteration 0, lr = 0.01
+I0502 12:16:48.910445 13612 solver.cpp:228] Iteration 80, loss = -0.0983634
+I0502 12:16:48.910445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.186844 (* 1 = -0.186844 loss)
+I0502 12:16:48.910445 13612 solver.cpp:244]     Train net output #1: loss = 0.0884804 (* 1 = 0.0884804 loss)
+I0502 12:16:48.910445 13612 sgd_solver.cpp:106] Iteration 80, lr = 0.01
+I0502 12:16:59.235445 13612 solver.cpp:228] Iteration 160, loss = -0.0875275
+I0502 12:16:59.235445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.173894 (* 1 = -0.173894 loss)
+I0502 12:16:59.235445 13612 solver.cpp:244]     Train net output #1: loss = 0.0863661 (* 1 = 0.0863661 loss)
+I0502 12:16:59.235445 13612 sgd_solver.cpp:106] Iteration 160, lr = 0.01
+I0502 12:17:08.565445 13612 solver.cpp:228] Iteration 240, loss = -0.0860645
+I0502 12:17:08.565445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.169207 (* 1 = -0.169207 loss)
+I0502 12:17:08.565445 13612 solver.cpp:244]     Train net output #1: loss = 0.0831425 (* 1 = 0.0831425 loss)
+I0502 12:17:08.565445 13612 sgd_solver.cpp:106] Iteration 240, lr = 0.01
+I0502 12:17:20.109446 13612 solver.cpp:228] Iteration 320, loss = -0.0942014
+I0502 12:17:20.109446 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.170859 (* 1 = -0.170859 loss)
+I0502 12:17:20.109446 13612 solver.cpp:244]     Train net output #1: loss = 0.0766579 (* 1 = 0.0766579 loss)
+I0502 12:17:20.109446 13612 sgd_solver.cpp:106] Iteration 320, lr = 0.01
+I0502 12:17:32.179445 13612 solver.cpp:228] Iteration 400, loss = -0.0821939
+I0502 12:17:32.179445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.165031 (* 1 = -0.165031 loss)
+I0502 12:17:32.179445 13612 solver.cpp:244]     Train net output #1: loss = 0.0828369 (* 1 = 0.0828369 loss)
+I0502 12:17:32.179445 13612 sgd_solver.cpp:106] Iteration 400, lr = 0.01
+I0502 12:17:46.846446 13612 solver.cpp:228] Iteration 480, loss = -0.103747
+I0502 12:17:46.847445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.169863 (* 1 = -0.169863 loss)
+I0502 12:17:46.847445 13612 solver.cpp:244]     Train net output #1: loss = 0.0661164 (* 1 = 0.0661164 loss)
+I0502 12:17:46.847445 13612 sgd_solver.cpp:106] Iteration 480, lr = 0.01
+I0502 12:18:02.878445 13612 solver.cpp:228] Iteration 560, loss = -0.0927066
+I0502 12:18:02.878445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.182279 (* 1 = -0.182279 loss)
+I0502 12:18:02.878445 13612 solver.cpp:244]     Train net output #1: loss = 0.0895728 (* 1 = 0.0895728 loss)
+I0502 12:18:02.878445 13612 sgd_solver.cpp:106] Iteration 560, lr = 0.01
+I0502 12:18:15.537446 13612 solver.cpp:228] Iteration 640, loss = -0.109028
+I0502 12:18:15.552445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.179553 (* 1 = -0.179553 loss)
+I0502 12:18:15.552445 13612 solver.cpp:244]     Train net output #1: loss = 0.0705252 (* 1 = 0.0705252 loss)
+I0502 12:18:15.552445 13612 sgd_solver.cpp:106] Iteration 640, lr = 0.01
+I0502 12:18:27.752445 13612 solver.cpp:228] Iteration 720, loss = -0.0674346
+I0502 12:18:27.752445 13612 solver.cpp:244]     Train net output #0: ker_loss = -0.156733 (* 1 = -0.156733 loss)
+I0502 12:18:27.752445 13612 solver.cpp:244]     Train net output #1: loss = 0.089298 (* 1 = 0.089298 loss)
+I0502 12:18:27.752445 13612 sgd_solver.cpp:106] Iteration 720, lr = 0.01
+I0502 12:18:39.337445 13612 solver.cpp:454] Snapshotting to binary proto file D:/MyKinFace/model/new3_iter_800.caffemodel
+I0502 12:18:39.421445 13612 sgd_solver.cpp:273] Snapshotting solver state to binary proto file D:/MyKinFace/model/new3_iter_800.solverstate
+I0502 12:18:39.476445 13612 solver.cpp:317] Iteration 800, loss = -0.0920132
+I0502 12:18:39.476445 13612 solver.cpp:322] Optimization Done.
+I0502 12:18:39.476445 13612 caffe.cpp:255] Optimization Done.

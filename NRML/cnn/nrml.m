@@ -1,7 +1,7 @@
-function nrml(name)
+function mean_acc = nrml(name)
 %% demo: NRML
 
-addpath('../nrml');
+addpath('nrml');
 
 %% data & parametres
 %load('data/LBP_KinFaceW-II_FS.mat');
@@ -68,7 +68,9 @@ for c = 1:nfold
     t_acc(c) = acc;
     fprintf('Fold %d, Accuracy = %6.4f \n', c, acc);
 end
-fprintf('The mean accuracy = %6.4f\n', mean(t_acc));
+
+mean_acc = mean(t_acc);
+fprintf('The mean accuracy = %6.4f\n', mean_acc);
 
 %% plot ROC
 [fpr, tpr] = ROCcurve(t_sim, t_ts_matches);
