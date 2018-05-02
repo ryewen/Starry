@@ -9,6 +9,6 @@ for i = 1: size(names, 2)
     display(name);
     crossFeatures(name);
     mean_acc = nrml(name);
-    fprintf(fid, '%s %s\n', name, mean_acc);
+    fprintf(fid, '%s %d\n', name, mean_acc);
 end
 fclose(fid);
